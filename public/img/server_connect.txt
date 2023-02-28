@@ -1,0 +1,8 @@
+만약 서버와 연결하려 한다면
+
+해당 만들어진 리액트 파일에 프로젝트롤 만들어야 한다.
+
+npx create-react-app REACT-PROJECT   -> 서버에서 연결할 파일을 생성
+
+-> 리액트 파일 업데이트 - > npm run build
+
