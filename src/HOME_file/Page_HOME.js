@@ -20,7 +20,6 @@ const styles = (theme) => ({
 
 class HOME extends React.Component {
   img_ref = React.createRef();
-  img_ref2 = React.createRef();
   Homepage_Title = React.createRef();
   //생성자 명시
   constructor(props) {
@@ -175,9 +174,9 @@ class HOME extends React.Component {
         this.setState({
           title_num: 1,
         });
-        this.Homepage_Title.current.style.transform = "translate(-3vh)";
-        this.Homepage_Title.current.style.transition = "50ms";
-        this.Homepage_Title.current.style.opacity = "0";
+        // this.Homepage_Title.current.style.transform = "translate(-3vh)";
+        // this.Homepage_Title.current.style.transition = "50ms";
+        // this.Homepage_Title.current.style.opacity = "0";
 
         this.img_ref.current.style.transition = "0ms";
         this.img_ref.current.style.opacity = "0";
@@ -186,9 +185,9 @@ class HOME extends React.Component {
         break;
 
       case 1:
-        this.Homepage_Title.current.style.transform = "translate(0vh)";
-        this.Homepage_Title.current.style.transition = "1600ms";
-        this.Homepage_Title.current.style.opacity = "1";
+        // this.Homepage_Title.current.style.transform = "translate(0vh)";
+        // this.Homepage_Title.current.style.transition = "1600ms";
+        // this.Homepage_Title.current.style.opacity = "1";
 
         this.img_ref.current.style.transition = "900ms";
         this.img_ref.current.style.opacity = "1";
@@ -205,8 +204,6 @@ class HOME extends React.Component {
         this.img_ref.current.style.transition = "0ms";
         // this.img_ref.current.style.transition="0ms";
 
-        this.img_ref2.current.style.transform = "translate(0vw)";
-        this.img_ref2.current.style.transition = "0ms";
         current_number = 1;
 
         this.setState({
@@ -226,8 +223,6 @@ class HOME extends React.Component {
         this.img_ref.current.style.transition = "0ms";
         //  this.img_ref.current.style.transition="500ms";
 
-        this.img_ref2.current.style.transform = "translate(-15vw)";
-        this.img_ref2.current.style.transition = "500ms";
         current_number = 2;
 
         this.setState({
@@ -247,8 +242,6 @@ class HOME extends React.Component {
         this.img_ref.current.style.transition = "0ms";
         //  this.img_ref.current.style.transition="500ms";
 
-        this.img_ref2.current.style.transform = "translate(-30vw)";
-        this.img_ref2.current.style.transition = "500ms";
         current_number = 3;
 
         this.setState({
@@ -267,8 +260,6 @@ class HOME extends React.Component {
         this.img_ref.current.style.transition = "0ms";
         //  this.img_ref.current.style.transition="500ms";
 
-        this.img_ref2.current.style.transform = "translate(-45vw)";
-        this.img_ref2.current.style.transition = "500ms";
         current_number = 4;
 
         this.setState({
@@ -287,8 +278,6 @@ class HOME extends React.Component {
         this.img_ref.current.style.transition = "0ms";
         //   this.img_ref.current.style.transition="500ms";
 
-        this.img_ref2.current.style.transform = "translate(-60vw)";
-        this.img_ref2.current.style.transition = "500ms";
         current_number = 5;
 
         this.setState({
@@ -307,8 +296,6 @@ class HOME extends React.Component {
         this.img_ref.current.style.transition = "0ms";
         //   this.img_ref.current.style.transition="500ms";
 
-        this.img_ref2.current.style.transform = "translate(-75vw)";
-        this.img_ref2.current.style.transition = "500ms";
         current_number = 0;
 
         this.setState({
@@ -365,310 +352,187 @@ class HOME extends React.Component {
     return (
       <div className="animate__animated animate__fadeIn --animate-duration:1s; ">
         <div className="home_Backimg">
-          <Image src="./img/main.png" className="Home_tile_img" fluid />
-
+          <div style={{ backgroundColor: "#24b600", minHeight: "350px" }}>
+            <div>
+              <div className="top_title">회로 설계,기술 개발,최상의 서비스</div>
+              <h1 className="top_h1">도운테크가 약속드립니다.</h1>
+              <h3 className="top_h3">
+                최고의 품질과 최상의 서비스로 신속하게 <br />
+                고객여러분께 공급하고자 노력하고 있습니다.
+              </h3>
+            </div>
+          </div>
           <div className="Grid3_Container">
-            <div className="Grid3_Header"> </div>
+            <div className="Grid3_Header"></div>
             <div className="grid3_outer1"></div>
 
             <div className="section">
               <div className="Grid3_Main">
                 <div className="Top_section">
-                  <div className="Top_section__container">
-                    <div className="slider">
-                      <div className="Container_img" ref={this.img_ref}>
-                        <div className="img_ani">
-                          <a
-                            href=""
-                            className="Container_init1"
-                            target=""
-                            data-type="Front-end"
-                          >
-                            <Image
-                              src="./img/pcb4.png"
-                              alt="img"
-                              className="img_size1"
-                              fluid
-                            ></Image>
-                          </a>
-                        </div>
+                  <div>
+                    <div className="Top_section__container">
+                      <div className="slider">
+                        <div className="Container_img" ref={this.img_ref}>
+                          <div className="img_ani">
+                            <a
+                              href=""
+                              className="Container_init1"
+                              target=""
+                              data-type="Front-end"
+                            >
+                              <Image
+                                src="./img/pcb4.png"
+                                alt="img"
+                                className="img_size1"
+                                fluid
+                              ></Image>
+                            </a>
+                          </div>
 
-                        <div className="img_ani">
-                          <a
-                            href=""
-                            className="Container_init1"
-                            target=""
-                            data-type="Front-end"
-                          >
-                            <Image
-                              src="./img/pcb5.png"
-                              alt="img"
-                              className="img_size1"
-                              fluid
-                            ></Image>
-                          </a>
-                        </div>
+                          <div className="img_ani">
+                            <a
+                              href=""
+                              className="Container_init1"
+                              target=""
+                              data-type="Front-end"
+                            >
+                              <Image
+                                src="./img/pcb5.png"
+                                alt="img"
+                                className="img_size1"
+                                fluid
+                              ></Image>
+                            </a>
+                          </div>
 
-                        <div className="img_ani">
-                          <a
-                            href=""
-                            className="Container_init1"
-                            target=""
-                            data-type="Front-end"
-                          >
-                            <Image
-                              src="./img/pcb18.png"
-                              alt="img"
-                              className="img_size1"
-                              fluid
-                            ></Image>
-                          </a>
-                        </div>
+                          <div className="img_ani">
+                            <a
+                              href=""
+                              className="Container_init1"
+                              target=""
+                              data-type="Front-end"
+                            >
+                              <Image
+                                src="./img/pcb18.png"
+                                alt="img"
+                                className="img_size1"
+                                fluid
+                              ></Image>
+                            </a>
+                          </div>
 
-                        <div className="img_ani">
-                          <a
-                            href=""
-                            className="Container_init1"
-                            target=""
-                            data-type="Front-end"
-                          >
-                            <Image
-                              src="./img/pcb35.png"
-                              alt="img"
-                              className="img_size1"
-                              fluid
-                            ></Image>
-                          </a>
-                        </div>
+                          <div className="img_ani">
+                            <a
+                              href=""
+                              className="Container_init1"
+                              target=""
+                              data-type="Front-end"
+                            >
+                              <Image
+                                src="./img/pcb35.png"
+                                alt="img"
+                                className="img_size1"
+                                fluid
+                              ></Image>
+                            </a>
+                          </div>
 
-                        <div className="img_ani">
-                          <a
-                            href=""
-                            className="Container_init1"
-                            target=""
-                            data-type="Front-end"
-                          >
-                            <Image
-                              src="./img/pcb31.png"
-                              alt="img"
-                              className="img_size1"
-                              fluid
-                            ></Image>
-                          </a>
-                        </div>
+                          <div className="img_ani">
+                            <a
+                              href=""
+                              className="Container_init1"
+                              target=""
+                              data-type="Front-end"
+                            >
+                              <Image
+                                src="./img/pcb31.png"
+                                alt="img"
+                                className="img_size1"
+                                fluid
+                              ></Image>
+                            </a>
+                          </div>
 
-                        <div className="img_ani">
-                          <a
-                            href=""
-                            className="Container_init1"
-                            target=""
-                            data-type="Front-end"
-                          >
-                            <Image
-                              src="./img/pcb4.png"
-                              alt="img"
-                              className="img_size1"
-                              fluid
-                            ></Image>
-                          </a>
+                          <div className="img_ani">
+                            <a
+                              href=""
+                              className="Container_init1"
+                              target=""
+                              data-type="Front-end"
+                            >
+                              <Image
+                                src="./img/pcb4.png"
+                                alt="img"
+                                className="img_size1"
+                                fluid
+                              ></Image>
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  {/*https://animate.style/ 참고 */}
-                  <div className="Top_section__container">
-                    <div
-                      className="Top_section__container2"
-                      ref={this.Homepage_Title}
-                    >
-                      <div className="animate__animated animate__fadeIn  ">
-                        <div className="top_title">
-                          회로 설계,기술 개발,최상의 서비스
-                        </div>
-                        <h1 className="top_h1">도운테크가 약속드립니다.</h1>
-                        <h3 className="top_h3">
-                          최고의 품질과 최상의 서비스로 신속하게 <br />
-                          고객여러분께 공급하고자 노력하고 있습니다.
-                          <br />
-                          <br />
-                        </h3>
+                    {/*https://animate.style/ 참고 */}
+                    <div>
+                      <div className="work__categories">
+                        <button
+                          onClick={this.pointClick.bind(this, 0)}
+                          className={
+                            this.state.Select_Btn1
+                              ? "backcolor_On"
+                              : "backcolor_Off"
+                          }
+                        >
+                          <span className="category__count"></span>
+                        </button>
+                        <button
+                          onClick={this.pointClick.bind(this, 1)}
+                          className={
+                            this.state.Select_Btn2
+                              ? "backcolor_On"
+                              : "backcolor_Off"
+                          }
+                        >
+                          <span className="category__count"></span>
+                        </button>
+                        <button
+                          onClick={this.pointClick.bind(this, 2)}
+                          className={
+                            this.state.Select_Btn3
+                              ? "backcolor_On"
+                              : "backcolor_Off"
+                          }
+                        >
+                          <span className="category__count"></span>
+                        </button>
+                        <button
+                          onClick={this.pointClick.bind(this, 3)}
+                          className={
+                            this.state.Select_Btn4
+                              ? "backcolor_On"
+                              : "backcolor_Off"
+                          }
+                        >
+                          <span className="category__count"></span>
+                        </button>
+                        <button
+                          onClick={this.pointClick.bind(this, 4)}
+                          className={
+                            this.state.Select_Btn5
+                              ? "backcolor_On"
+                              : "backcolor_Off"
+                          }
+                        >
+                          <span className="category__count"></span>
+                        </button>
                       </div>
                     </div>
-
-                    <div className="work__categories">
-                      <button
-                        onClick={this.pointClick.bind(this, 0)}
-                        className={
-                          this.state.Select_Btn1
-                            ? "backcolor_On"
-                            : "backcolor_Off"
-                        }
-                      >
-                        <span className="category__count"></span>
-                      </button>
-                      <button
-                        onClick={this.pointClick.bind(this, 1)}
-                        className={
-                          this.state.Select_Btn2
-                            ? "backcolor_On"
-                            : "backcolor_Off"
-                        }
-                      >
-                        <span className="category__count"></span>
-                      </button>
-                      <button
-                        onClick={this.pointClick.bind(this, 2)}
-                        className={
-                          this.state.Select_Btn3
-                            ? "backcolor_On"
-                            : "backcolor_Off"
-                        }
-                      >
-                        <span className="category__count"></span>
-                      </button>
-                      <button
-                        onClick={this.pointClick.bind(this, 3)}
-                        className={
-                          this.state.Select_Btn4
-                            ? "backcolor_On"
-                            : "backcolor_Off"
-                        }
-                      >
-                        <span className="category__count"></span>
-                      </button>
-                      <button
-                        onClick={this.pointClick.bind(this, 4)}
-                        className={
-                          this.state.Select_Btn5
-                            ? "backcolor_On"
-                            : "backcolor_Off"
-                        }
-                      >
-                        <span className="category__count"></span>
-                      </button>
-                    </div>
                   </div>
+                  {/* section */}
                 </div>
 
                 <div className="bottom_section">
-                  <div className="bottom_section__container">
-                    <div className="slider2">
-                      <div className="Container_img2" ref={this.img_ref2}>
-                        <div className="img_ani2">
-                          <a
-                            href=""
-                            className="Container2_init"
-                            target=""
-                            data-type="Front-end"
-                          >
-                            <Image
-                              src="./img/pcb2.png"
-                              alt="img"
-                              className="img_size2"
-                              fluid
-                            ></Image>
-                          </a>
-                        </div>
-
-                        <div className="img_ani2">
-                          <a
-                            href=""
-                            className="Container2_init"
-                            target=""
-                            data-type="Front-end"
-                          >
-                            <Image
-                              src="./img/pcb1.png"
-                              alt="img"
-                              className="img_size2"
-                              fluid
-                            ></Image>
-                          </a>
-                        </div>
-
-                        <div className="img_ani2">
-                          <a
-                            href=""
-                            className="Container2_init"
-                            target=""
-                            data-type="Front-end"
-                          >
-                            <Image
-                              src="./img/pcb29.png"
-                              alt="img"
-                              className="img_size2"
-                              fluid
-                            ></Image>
-                          </a>
-                        </div>
-
-                        <div className="img_ani2">
-                          <a
-                            href=""
-                            className="Container2_init"
-                            target=""
-                            data-type="Front-end"
-                          >
-                            <Image
-                              src="./img/pcb24.png"
-                              alt="img"
-                              className="img_size2"
-                              fluid
-                            ></Image>
-                          </a>
-                        </div>
-
-                        <div className="img_ani2">
-                          <a
-                            href=""
-                            className="Container2_init"
-                            target=""
-                            data-type="Front-end"
-                          >
-                            <Image
-                              src="./img/pcb27.png"
-                              alt="img"
-                              className="img_size2"
-                              fluid
-                            ></Image>
-                          </a>
-                        </div>
-
-                        <div className="img_ani2">
-                          <a
-                            href=""
-                            className="Container2_init"
-                            target=""
-                            data-type="Front-end"
-                          >
-                            <Image
-                              src="./img/pcb2.png"
-                              alt="img"
-                              className="img_size2"
-                              fluid
-                            ></Image>
-                          </a>
-                        </div>
-
-                        <div className="img_ani2">
-                          <a
-                            href=""
-                            className="Container2_init"
-                            target=""
-                            data-type="Front-end"
-                          >
-                            <Image
-                              src="./img/pcb1.png"
-                              alt="img"
-                              className="img_size2"
-                              fluid
-                            ></Image>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <div className="bottom_section__container"></div>
 
                   <div className="bottom_Quick_container">
                     <div className="bottom_Quick_Menu">QUICK MENU</div>
@@ -713,71 +577,17 @@ class HOME extends React.Component {
                     </div>
                   </div>
 
-                  <div className="CSCENTER__container"> </div>
+                  <div>
+                    <h1>CS CENTER</h1>
+                    <span>Tel | 070 - 8871 - 2866</span>
+                    <span>Email | dawntech@dawnth.co.kr</span>
+                    <span>상담시간 | 9:00AM ~ 6:00PM (주말, 공휴일 제외)</span>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div className="grid3_outer2"></div>
-
-            <div className="page_footer">
-              <div className="admir_bottom_container">
-                <material_Button
-                  variant="contained"
-                  color="Black;"
-                  className="Admir_Ctl"
-                  onClick={this.handleClickOpen}
-                >
-                  {" "}
-                  OPEN{" "}
-                </material_Button>
-                <Dialog open={this.state.open} onClose={this.handleClose}>
-                  <DialogTitle>Administrator</DialogTitle>
-
-                  <DialogContent>
-                    <TextField
-                      label="ID"
-                      type="text"
-                      name="userID"
-                      value={this.state.Admir_ID}
-                      onChange={this.handleID}
-                    ></TextField>
-                    <br />
-                    <TextField
-                      label="Password"
-                      type="password"
-                      name="userPassword"
-                      value={this.state.Admir_Password}
-                      onChange={this.handlePasswrod}
-                    ></TextField>
-                  </DialogContent>
-
-                  <DialogActions>
-                    <material_Button
-                      variant="contained"
-                      color="primary"
-                      onClick={this.Admir_login_init}
-                    >
-                      로그인
-                    </material_Button>
-                    <material_Button
-                      variant="outlined"
-                      color="primary"
-                      onClick={this.handleClose}
-                    >
-                      닫기
-                    </material_Button>
-                  </DialogActions>
-                </Dialog>
-              </div>
-
-              <BOTTOM />
-
-              {/* 
-           <button onClick={this.openModal} className="Admir_Ctl">Admir</button>
-            <SignIn isOpen={this.state.isModalOpen} close={this.closeModal} />
-        */}
-            </div>
           </div>
         </div>
       </div>
