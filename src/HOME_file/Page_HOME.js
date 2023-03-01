@@ -477,7 +477,7 @@ class HOME extends React.Component {
                       </div>
                     </div>
 
-                    {/*https://animate.style/ 참고 */}
+                    {/* https://animate.style/ 참고 */}
                     <div>
                       <div className="work__categories">
                         <button
@@ -533,14 +533,16 @@ class HOME extends React.Component {
                       </div>
                     </div>
                   </div>
-                  {/* section */}
-                </div>
-
-                <div className="bottom_section">
-                  <div className="bottom_section__container"></div>
-
-                  <div className="bottom_Quick_container">
-                    <div className="bottom_Quick_Menu">QUICK MENU</div>
+                  {/* 추가 */}
+                  <div className="content_right">
+                    <div className="CS_center">
+                      <h1>CS CENTER</h1>
+                      <span>Tel | 070 - 8871 - 2866</span>
+                      <span>Email | dawntech@dawnth.co.kr</span>
+                      <span>
+                        상담시간 | 9:00AM ~ 6:00PM (주말, 공휴일 제외)
+                      </span>
+                    </div>
 
                     <div className="Qucik_img_container">
                       <div className="Quick_small_container">
@@ -581,15 +583,17 @@ class HOME extends React.Component {
                       </div>
                     </div>
                   </div>
-
-                  <div>
-                    <h1>CS CENTER</h1>
-                    <span>Tel | 070 - 8871 - 2866</span>
-                    <span>Email | dawntech@dawnth.co.kr</span>
-                    <span>상담시간 | 9:00AM ~ 6:00PM (주말, 공휴일 제외)</span>
-                  </div>
                 </div>
+                {/* section */}
               </div>
+
+              {/* <div className="bottom_section">
+                <div className="bottom_Quick_container">
+                  <div className="bottom_Quick_Menu">QUICK MENU</div>
+
+                  <div className="Qucik_img_container"></div>
+                </div>
+              </div> */}
             </div>
 
             <div className="grid3_outer2"></div>

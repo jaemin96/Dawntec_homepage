@@ -46,9 +46,7 @@
 .App {
   text-align: center;
 }
-.wrapper {
-  height: 100%;
-}
+
 .App-body {
   background-color: #6d7b97;
   min-height: 50vh;
@@ -126,7 +124,6 @@ p {
 
 .wrapper {
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
 }
 
@@ -156,8 +153,8 @@ body {
 }
 
 .screen_footer {
-  height: 60px;
   z-index: 2;
+  height: auto;
 }
 
 /* Section common*/
@@ -172,65 +169,6 @@ body {
 }
 
 /* Section common*/
-.Top_section {
-  position: relative;
-
-  padding-top: 10px;
-
-  padding-left: 10px;
-  padding-right: 10px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.Top_section__container {
-  padding: 1%;
-}
-.Top_section__container2 {
-  position: relative;
-
-  margin-top: 10%;
-  margin-bottom: 10%;
-
-  font-size: var(--font-medium);
-  text-align: center;
-}
-.top_title {
-  margin: 8px 0; /*8px 위 아래 0 양옆*/
-  font-style: italic;
-  font-weight: bold;
-  /* font-size: var(--font-medium);*/
-
-  font-size: 2vw;
-
-  color: #7c7979;
-}
-.top_h1 {
-  /*font-size: var(--font-large);*/
-  font-weight: var(--weight-bold);
-  color: var(--color-black);
-  margin: 16px 0; /*16px 위 아래 0 양옆*/
-
-  font-size: 3vw;
-}
-.top_h2 {
-  /* font-size: var(--font-medium);*/
-  font-weight: var(--weight-semi-bold);
-  color: var(--color-black);
-  margin: 8px 0; /*8px 위 아래 0 양옆*/
-}
-
-.top_h3 {
-  /* font-size: var(--font-regular);*/
-  font-weight: var(--weight-regular);
-  color: var(--color-black);
-  margin: 8px 0; /*8px 위 아래 0 양옆*/
-
-  color: #7c7979;
-  font-size: 1.5vw;
-}
 
 .bottom_section {
   margin-top: 1%;
@@ -283,32 +221,6 @@ body {
   color: #000000;
   font-size: 1.3vw;
 }
-.Qucik_img_container {
-  display: inline-flex;
-  margin-top: 11%;
-  margin-bottom: 12%;
-}
-.Quick_small_container {
-  display: block;
-}
-.Quick_img_ctl {
-  width: 65%;
-  margin: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-.Quick_img_ctl:hover {
-  /* 마우스를 올려놨을 경우 변화*/
-
-  color: var(--color-pink);
-  transform: rotate(-20deg) scale(1.2) translateY(5px);
-  transition: 0.3s;
-}
-
-.Quick_img_text {
-  font-size: 0.8vw;
-  color: #7c7979;
-}
 
 .text_box {
   width: 100%;
@@ -320,9 +232,14 @@ body {
 
 .animate__animated.animate__fadeInDown {
   --animate-duration: 3s;
+  height: 100%;
 }
 .animate__animated.animate__fadeIn {
   /*--animate-duration:3s;*/
+}
+
+.wrapper {
+  height: 100%;
 }
 
 .my-element {
@@ -1991,8 +1908,6 @@ body {
 
 .Grid3_Container {
   display: grid;
-  height: 100%;
-
   grid-template-columns: 10% 1fr 10%;
   grid-template-rows: 10% 1fr 10%;
   grid-template-areas:
@@ -2331,7 +2246,7 @@ body {
   margin: 1%;
 }
 
-/* 추가작업 */
+/* ==========  추가작업  ============ */
 .banner_img {
   position: relative;
   min-height: 350px;
@@ -2365,4 +2280,89 @@ body {
 }
 .content3 {
   color: var(--color-white);
+}
+
+.Top_section {
+  position: relative;
+
+  padding-top: 10px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+}
+.content_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.CS_center {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.Top_section__container {
+  padding: 1%;
+}
+.Top_section__container2 {
+  position: relative;
+
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+  font-size: var(--font-medium);
+  text-align: center;
+}
+.top_title {
+  margin: 8px 0;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2vw;
+  color: #7c7979;
+}
+.top_h1 {
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 16px 0;
+  font-size: 3vw;
+}
+.top_h2 {
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+.top_h3 {
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 8px 0;
+  color: #7c7979;
+  font-size: 1.5vw;
+}
+
+.Qucik_img_container {
+  display: flex;
+  gap: 1.5rem;
+}
+.Quick_small_container {
+  display: block;
+}
+.Quick_img_ctl {
+  width: 55px;
+  height: 55px;
+}
+.Quick_img_ctl:hover {
+  transform: rotate(-20deg) scale(1.2) translateY(5px);
+  transition: 0.3s;
+}
+
+.Quick_img_text {
+  font-size: 0.8vw;
+  color: #7c7979;
 }
