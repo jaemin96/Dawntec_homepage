@@ -351,17 +351,22 @@ class HOME extends React.Component {
 
     return (
       <div className="animate__animated animate__fadeIn --animate-duration:1s; ">
-        <div className="home_Backimg">
-          <div style={{ backgroundColor: "#24b600", minHeight: "350px" }}>
-            <div>
-              <div className="top_title">회로 설계,기술 개발,최상의 서비스</div>
-              <h1 className="top_h1">도운테크가 약속드립니다.</h1>
-              <h3 className="top_h3">
+        {/* image 상단에 표시될 내용 */}
+        <div className="banner_img">
+          <div className="banner_cover">
+            <div className="cover_content">
+              <span className="content1">
+                회로 설계,기술 개발,최상의 서비스
+              </span>
+              <span className="content2">도운테크가 약속드립니다.</span>
+              <p className="content3">
                 최고의 품질과 최상의 서비스로 신속하게 <br />
                 고객여러분께 공급하고자 노력하고 있습니다.
-              </h3>
+              </p>
             </div>
           </div>
+        </div>
+        <div className="home_Backimg">
           <div className="Grid3_Container">
             <div className="Grid3_Header"></div>
             <div className="grid3_outer1"></div>
