@@ -245,7 +245,6 @@ body {
   --animate-repeat: 2;
 }
 
-
 /* Home*/
 
 .home {
@@ -631,16 +630,6 @@ body {
   align-items: center;
   color: #bdbdbd;
   font-size: 1.05vw;
-}
-
-.footer {
-  background-color: var(--color-li-black);
-  color: var(--color-white);
-
-  width: 100%;
-  height: auto;
-
-  color: #bdbdbd;
 }
 
 /* scrool*/
@@ -2099,13 +2088,10 @@ body {
 
 .Tech_Small_box {
   border: 1.5px solid rgb(204, 204, 204);
-
 }
 .Tech_Small_title {
-
 }
 .Tech_Small_title_explain {
-
 }
 
 .APP_Item {
@@ -2126,7 +2112,6 @@ body {
 #root {
   position: relative;
 }
-
 
 .banner_img {
   position: relative;
@@ -2249,7 +2234,6 @@ body {
 }
 
 .Tech_Item_box {
-
 }
 
 /* .Tech_Item:hover {
@@ -2291,7 +2275,6 @@ body {
   z-index: 1;
 }
 
-
 .Nav_title {
   color: var(--color-li-black);
 
@@ -2300,14 +2283,23 @@ body {
 
   margin-right: 7vw;
 }
-
+.navbar-nav {
+  margin: 0;
+  gap: 0.6rem;
+}
 .navbar__log {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
 }
-
+.mr-auto {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
 .navbar__menu {
   display: flex;
+  gap: 1rem;
 }
 
 .navbar__menu_dropdown {
@@ -2320,21 +2312,50 @@ body {
   margin-right: 0.7vw;
   font-weight: bold;
 }
-
-.Link_btn {
+.nav_home {
   color: rgb(112, 112, 112);
   padding: 8px 15px;
   margin: 0 5px;
   cursor: pointer;
-  /* 마우스를 올렸을 때 손가락 모양으로 변함*/
   border: 1px solid transparent;
   border-radius: var(--size-border-radius);
 }
-
-.Link_btn:hover {
-  /* 마우스를 올려놨을 경우 변화*/
-  border: 1px solid white;
-  background-color: var(--color-dark-grey);
+.nav_home_btn {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+.nav_home_btn:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.9);
   text-decoration: none;
-  color: rgb(255, 255, 255);
+}
+.Link_btn {
+  color: rgb(112, 112, 112);
+  padding: 8px 15px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: var(--size-border-radius);
+  width: 100vw;
+}
+.nav-link {
+  -webkit-tap-highlight-color: transparent !important;
+}
+.Link_btn.dropdown-item:hover {
+  text-decoration: none;
+  color: rgb(112, 112, 112);
+}
+
+.dropdown-toggle.nav-link::after {
+  display: none;
+}
+
+.footer {
+  background-color: var(--color-li-black);
+  padding: 3rem;
+  color: var(--color-white);
+
+  width: 100%;
+  height: auto;
+
+  color: #bdbdbd;
 }
