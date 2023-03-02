@@ -25,10 +25,9 @@ class Company_Variety_Tech extends React.Component {
   render() {
     return (
       <div className="animate__animated animate__fadeIn  ">
-        <div className="Company_Come_Container">
-          <div className="come_aside">
-            <div className="sidebar_title">회사소개</div>
-            {/*<div className = "sidebar_container"><Link to ="/Company_Guide/Company_Year" className="sidebar_link">회사연혁</Link></div>*/}
+        <div className="Grid1_Container">
+          <div className="Grid1_aside">
+            <div className="sidebar_title">자료실</div>
             <div className="sidebar_container">
               <Link to="/Company_Tech" className="sidebar_link">
                 자료실
@@ -44,9 +43,9 @@ class Company_Variety_Tech extends React.Component {
             </div>
           </div>
 
-          <div className="Come_header"></div>
+          <div className="Grid1_header"></div>
 
-          <div className="Come_Main">
+          <div className="Grid1_Main">
             <div className="Tech_Small_box">
               <div className="Tech_Small_title">
                 Circuit Design - 회로설계
@@ -96,7 +95,6 @@ class Company_Variety_Tech extends React.Component {
                 ></Image>
               </div>
             </div>
-
             <div className="Tech_Small_box">
               <div className="Tech_Small_title">
                 production - 제작
@@ -264,7 +262,7 @@ class Company_Variety_Tech extends React.Component {
             </div>
           </div>
 
-          <div className="Come_Main2"></div>
+          <div className="Grid1_Outer2"></div>
         </div>
       </div>
     );

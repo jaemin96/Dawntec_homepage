@@ -64,7 +64,7 @@ class Company_Confirm extends React.Component {
     };
 
     return (
-      <div className="animate__animated animate__fadeIn  ">
+      <div className="animate__animated animate__fadeIn">
         <div className="Grid4_Container">
           <div class="Grid4_aside">
             <div className="sidebar_title">자료실</div>
