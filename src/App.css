@@ -2359,3 +2359,47 @@ body {
 
   color: #bdbdbd;
 }
+
+@media screen and (max-width: 768px) {
+  .company_name {
+    display: none;
+  }
+  .navbar-toggler.collapsed {
+  }
+  .mr-auto.navbar-nav {
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 1rem;
+  }
+
+  .navbar.navbar-expand-lg {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .footer_link {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .User_Guide_Ctl {
+    font-size: 15px;
+  }
+
+  .footer_contact {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .footer_contact > li > a {
+    color: #bdbdbd;
+    border-bottom: 1px solid #bdbdbd;
+  }
+}

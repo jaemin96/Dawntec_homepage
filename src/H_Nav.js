@@ -28,7 +28,7 @@ class J_Nav extends React.Component {
       <div className="nav_Background">
         {/**   <!-- Navbar   --> */}
         <ReactBootStrap.Navbar bg="light" variant="light" expand="lg">
-          Dawntech
+          <span className="company_name">{"Dawntech"}</span>
           <ReactBootStrap.Navbar.Toggle aria-controls="basic-navbar-nav" />
           <ReactBootStrap.Navbar.Collapse id="basic-navbar-nav ">
             <ReactBootStrap.Nav className="mr-auto">
