@@ -2361,6 +2361,21 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .Top_section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content_right {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .CS_center {
+    align-items: center;
+    gap: 0.2rem;
+  }
+
   .company_name {
     display: none;
   }
@@ -2402,4 +2417,10 @@ body {
     color: #bdbdbd;
     border-bottom: 1px solid #bdbdbd;
   }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 1024px) {
 }
