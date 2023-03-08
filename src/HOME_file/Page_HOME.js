@@ -355,14 +355,31 @@ class HOME extends React.Component {
         <div className="banner_img">
           <div className="banner_cover">
             <div className="cover_content">
-              <span className="content1">
-                회로 설계,기술 개발,최상의 서비스
-              </span>
-              <span className="content2">도운테크가 약속드립니다.</span>
-              <p className="content3">
-                최고의 품질과 최상의 서비스로 신속하게 <br />
-                고객여러분께 공급하고자 노력하고 있습니다.
-              </p>
+              <div className="b_content">
+                {/* right-top */}
+                <ul className="content1">
+                  <li>
+                    <span>회로 설계</span>
+                  </li>
+                  <li>
+                    <span>기술 개발</span>
+                  </li>
+                  <li>
+                    <span>최상의 서비스</span>
+                  </li>
+                </ul>
+                {/* left-bottom */}
+                <div className="left_bottom_content">
+                  <span className="content2">
+                    도운테크가 <br />
+                    약속드립니다.
+                  </span>
+                  <p className="content3">
+                    최고의 품질과 최상의 서비스로 신속하게 <br />
+                    고객여러분께 공급하고자 노력하고 있습니다.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
