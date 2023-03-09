@@ -16,8 +16,9 @@
   --color-black: #000000;
   --color-skublue: #b4f2f8;
   --color-whiteblud: #f7fbfc;
-
   --color-li-black: #413c3c;
+  --color-footer-black: #2f2f2f;
+  --color-footer-font: #f2f2f2;
 
   /*Font size*/
   --font-large: 48px;
@@ -41,6 +42,8 @@
 /* Universal tags*/
 * {
   box-sizing: border-box;
+  font-family: "Inter";
+  font-style: normal;
 }
 
 .App {
@@ -2350,16 +2353,45 @@ body {
 }
 
 .footer {
-  background-color: var(--color-li-black);
-  padding: 3rem;
-  color: var(--color-white);
+  background-color: var(--color-footer-black);
+  padding: 2rem;
+  color: var(--color-footer-font);
 
   width: 100%;
   height: auto;
-
-  color: #bdbdbd;
 }
 
+.footer .footer_company h1 {
+  color: var(--color-footer-font);
+}
+
+.footer .footer_company .info {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.footer .footer_company .info .info_title {
+  margin: 0;
+  padding: 0;
+}
+
+.footer .divider {
+  height: 1px;
+  width: 100%;
+  background-color: #6f6f6f;
+}
+
+.footer .footer_copyright {
+  color: #6f6f6f;
+  font-weight: 400;
+  font-size: 0.5rem;
+  line-height: 1rem;
+  letter-spacing: 0.05rem;
+}
+
+/* ===================================== */
+/* ============ mobile-size ============ */
+/* ===================================== */
 @media screen and (max-width: 768px) {
   .banner_img {
     min-height: 46em;
@@ -2388,8 +2420,6 @@ body {
     text-align: right;
   }
   .content1 li span {
-    font-family: "Inter";
-    font-style: normal;
     font-weight: 800;
     font-size: 1rem;
     color: #ffffff;
@@ -2406,8 +2436,6 @@ body {
     gap: 0.5rem;
   }
   .content2 {
-    font-family: "Inter";
-    font-style: normal;
     font-weight: 600;
     font-size: 3rem;
     letter-spacing: 0.02em;
@@ -2416,8 +2444,6 @@ body {
     text-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
   }
   .content3 {
-    font-family: "Inter";
-    font-style: normal;
     font-weight: 400;
     font-size: 0.85rem;
     line-height: 1.3rem;
@@ -2443,6 +2469,8 @@ body {
   .company_name {
     display: none;
   }
+
+  /* === nav style === */
   .navbar-toggler.collapsed {
   }
   .mr-auto.navbar-nav {
@@ -2456,6 +2484,7 @@ body {
     align-items: flex-end;
   }
 
+  /*  === footer style === */
   .footer {
     display: flex;
     flex-direction: column;
@@ -2464,27 +2493,53 @@ body {
 
   .footer_link {
     display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-  }
-  .User_Guide_Ctl {
-    font-size: 15px;
+    flex-direction: row;
+    gap: 2rem;
   }
 
-  .footer_contact {
+  .footer_link .User_Guide_Ctl {
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    color: #fff;
+  }
+
+  .footer_company {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 2rem;
   }
 
-  .footer_contact > li > a {
-    color: #bdbdbd;
-    border-bottom: 1px solid #bdbdbd;
+  .footer_company .company_title h1 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.05rem;
+  }
+
+  .footer_company .company_main {
+  }
+  .footer_company .info .info_title {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  .footer_company .company_main .info .info_value {
+  }
+
+  .footer_company .company_contact {
   }
 }
 
+/* ===================================== */
+/* ============ tablet-size ============ */
+/* ===================================== */
 @media screen and (max-width: 1024px) {
 }
 
+/* ===================================== */
+/* ============== web-size ============= */
+/* ===================================== */
 @media screen and (min-width: 1024px) {
 }

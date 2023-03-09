@@ -51,10 +51,58 @@ class Bottom extends React.Component {
     return (
       <div>
         <div className="footer">
+          <ul className="footer_company">
+            {/* footer - 회사명 */}
+            <li className="company_title">
+              <h1>도운테크</h1>
+            </li>
+            <li className="company_main">
+              {/* footer - 회사 메인 */}
+              <div className="info CEO">
+                <h1 className="info_title">대표</h1>
+                <span className="info_value">김종운</span>
+              </div>
+              <div className="info CRN">
+                <h1 className="info_title">사업자등록번호</h1>
+                <span className="info_value">124-46-70585</span>
+              </div>
+            </li>
+
+            <li className="company_contact">
+              <div className="info company_contact-address">
+                <h1 className="info_title">주소</h1>
+                <span className="info_value">124-46-70585</span>
+              </div>
+              {/* footer - 전화 & 팩스 */}
+              <div className="info company_contact-tel">
+                <div className="info tel">
+                  <h1 className="info_title">전화</h1>
+                  <span className="info_value">
+                    <a href="tel:070-8871-2866">{"070-8871-2866"}</a>
+                  </span>
+                </div>
+                <div className="info fax">
+                  <h1 className="info_title">팩스</h1>
+                  <span className="info_value">124-46-70585</span>
+                </div>
+              </div>
+              {/* footer - 이메일 */}
+              <div className="info company_contact-email">
+                <h1 className="info_title">이메일</h1>
+                <span className="info_value">
+                  <a href="mailto:dawntech@dawnth.co.kr">
+                    {"dawntech@dawnth.co.kr"}
+                  </a>
+                </span>
+              </div>
+            </li>
+          </ul>
+
+          {/* 정책 이동 링크 */}
           <div className="footer_link">
             <div className="bottom_Policy2">
               <Link to="/User_Guide/Individual" className="User_Guide_Ctl">
-                개인정보 취급방침
+                개인정보취급방침
               </Link>
             </div>
             <div className="bottom_Policy2">
@@ -68,24 +116,16 @@ class Bottom extends React.Component {
               </Link>
             </div>
           </div>
-          <ul className="footer_contact">
-            <li>{"도운테크 대표 : 김종운"}</li>
-            <li>{"사업자등록번호 : 124-46-70585"}</li>
-            <li>
-              {"주소 : (445-300) 경기도 화성시 기산동 217-8번지 (도운테크)"}
-            </li>
-            <li>
-              {"TEL : "}
-              <a href="tel:070-8871-2866">{"070-8871-2866"}</a>
-            </li>
-            <li>{"FAX : 0505-810-1871"}</li>
-            <li>
-              {"E-mail : "}
-              <a href="mailto:dawntech@dawnth.co.kr">
-                {"dawntech@dawnth.co.kr"}
-              </a>
-            </li>
-          </ul>
+
+          <div>
+            {/* 구분선 */}
+            <div className="divider"></div>
+
+            {/* 저작권 */}
+            <div className="footer_copyright">
+              Copyright 2009. Dawntech. All righrs reserved.
+            </div>
+          </div>
         </div>
       </div>
     );
